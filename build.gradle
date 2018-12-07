@@ -21,10 +21,13 @@ sourceCompatibility = 1.8
 
 repositories {
 	mavenCentral()
+	mavenLocal()
 }
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 	compile('org.springframework.integration:spring-integration-core:4.3.12.RELEASE')
+	compile('org.springframework.boot:spring-boot-starter-jdbc')
+	compile('org.voltdb:voltdbclient:8.3')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
